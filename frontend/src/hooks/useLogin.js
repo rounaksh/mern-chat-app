@@ -16,7 +16,6 @@ const useLogin = () => {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ username, password })
             })
-
             const data = await res.json()
             if (data.error) throw new Error(data.error)
 
@@ -39,5 +38,5 @@ function handleInputError(username, password) {
         toast.error('Please fill in all fields')
         return false
     }
-    return false
+    return true
 }
