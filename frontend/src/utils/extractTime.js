@@ -14,5 +14,5 @@ export function extractTime(dateString) {
 
 // Helper function to pad single-digit numbers with a leading zero
 function padZero(num) {
-    return num.toString().padStart(2, '0')
+    return num.toString().padStart(1, '0')
 }
